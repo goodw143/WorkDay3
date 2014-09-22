@@ -11,8 +11,17 @@ Public Class Form1
         Dim st1 As String = txtFirstNum.Text
         Dim st2 As String = txtSecondNum.Text
 
-        num1 = CDbl(st1)
-        num2 = CDbl(st2)
+        ' Checkpoint
+        If Not IsNumeric(st1) Or IsNumeric(st2) Then
+            MessageBox.Show("Please type a number")
+            Return
+        End If
+
+        ' Clean Area
+            num1 = CDbl(st1)
+            num2 = CDbl(st2)
+
+
 
         Dim result As String
 
@@ -25,6 +34,11 @@ Public Class Form1
         End If
 
         txtResult.Text = result
+
+
+        
+        If
+        End If
     End Sub
 
 End Class
